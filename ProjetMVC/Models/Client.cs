@@ -7,6 +7,8 @@
 
         public string Prénom { get; set; }
         public string AdresseEmail { get; set; }
+         private int Age { get; set; }
+        
 
 
     }

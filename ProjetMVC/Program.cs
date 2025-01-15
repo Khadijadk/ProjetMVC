@@ -1,6 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using ProjetMVC.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<Myctx>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("InstaDbContext")));
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

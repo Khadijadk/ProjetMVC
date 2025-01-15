@@ -15,6 +15,7 @@ namespace ProjetMVC.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.message = "Hello Alioune tu dois partir à la préfécture et faire une grève pour qu'ils te donnent un rendez-vous";
             return View();
         }
 

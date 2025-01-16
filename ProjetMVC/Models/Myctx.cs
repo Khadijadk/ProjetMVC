@@ -12,5 +12,7 @@ namespace ProjetMVC.Models
         public DbSet<Produit> Produit { get; set; }
         public DbSet<Catalogue> Catalogue { get; set; }
 
+        public DbSet<Commande> Commande { get; set; }
+
     }
 }

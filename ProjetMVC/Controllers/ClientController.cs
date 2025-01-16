@@ -15,9 +15,10 @@ namespace ProjetMVC.Controllers
             ViewBag.Prénom = client.Prénom;
             ViewBag.Nom = client.Nom;
 
-         
+            ViewData["Nom"] = "Cli1";
+            ViewData["Message"] = "bonjour";
 
-           
+
 
             return View();
         }

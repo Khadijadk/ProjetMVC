@@ -25,6 +25,8 @@ namespace ProjetMVC.Controllers
 
             return View();
         }
+       
+
 
         public IActionResult Details()
         {
@@ -43,6 +45,7 @@ namespace ProjetMVC.Controllers
         {
             return View();
         }
+
 
 
     }

@@ -5,7 +5,7 @@ namespace ProjetMVC.Controllers
 {
     public class ClientController : Controller
     {
-        public IActionResult Client()
+        public IActionResult Ajouter()
         {
             Client client = new Client();
             client.AdresseEmail = "Khadija@gmail.com";
@@ -20,6 +20,16 @@ namespace ProjetMVC.Controllers
 
 
 
+            return View();
+        }
+
+        public IActionResult Modifier()
+        {
+            return View();
+        }
+
+        public IActionResult Supprimer()
+        {
             return View();
         }
     }

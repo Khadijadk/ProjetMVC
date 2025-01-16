@@ -1,7 +1,11 @@
-﻿namespace ProjetMVC.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ProjetMVC.Models
 {
     public class Catalogue{
-        public int Id { get; set; }
+
+        [Key]
+        public int num { get; set; }
         public string nom { get; set; }
         public string image { get; set; }
         public string description { get; set; }

@@ -6,6 +6,7 @@ namespace ProjetMVC.Controllers
 {
     public class HomeController : Controller
     {
+        string salut = "Bonjour khathil khadija , salam alley koum";
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -15,6 +16,7 @@ namespace ProjetMVC.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.salut = salut;
             return View();
         }
 

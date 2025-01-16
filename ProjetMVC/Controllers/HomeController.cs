@@ -16,11 +16,10 @@ namespace ProjetMVC.Controllers
 
         public IActionResult Index()
         {
-<<<<<<< HEAD
             ViewBag.salut = salut;
-=======
             ViewBag.message = "Hello Alioune tu dois partir à la préfécture et faire une grève pour qu'ils te donnent un rendez-vous";
->>>>>>> 1fb6f3069a1eeb763b6a088697fbee8a58be90c1
+
+
             return View();
         }
 

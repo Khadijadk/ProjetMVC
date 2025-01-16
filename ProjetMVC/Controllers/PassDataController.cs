@@ -41,10 +41,29 @@ namespace ProjetMVC.Controllers
             return View();
         }
 
-        public IActionResult Clients()
+        public IActionResult Details2()
         {
-            return View();
+            var product = new Produit
+            {
+                Id = 1,
+                Nom = "Laptop",
+                Prix = 999,
+            };
+
+            var client = new Client
+            {
+                Nom = "Darkaoui",
+                AdresseEmail = "Darkaoui56@gmail.com",
+
+            };
+            var viewModel = new ClientProduit
+            {
+                produits = product,
+                clients = client,
+            };
+            return View(viewModel);
         }
+
 
 
 

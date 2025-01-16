@@ -26,6 +26,24 @@ namespace ProjetMVC.Controllers
             return View();
         }
 
-   
+        public IActionResult Details()
+        {
+            var product = new Produit
+            {
+                Id = 1,
+                Nom = "Laptop",
+                Prix = 999,
+            };
+
+            ViewData["Product"] = product;
+            return View();
+        }
+
+        public IActionResult Client()
+        {
+            return View();
+        }
+
+
     }
 }

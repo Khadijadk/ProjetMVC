@@ -25,24 +25,9 @@ namespace ProjetMVC.Controllers
 
             return View();
         }
-        public IActionResult Details()
-        {
-            var product = new Produit
-            {
-                Id = 1,
-                Nom = "Laptop",
-                Prix = 999.99m,
-            };
-
-            ViewData["Produit"] = product;
-
-            return View();
-        }
+       
 
 
-
-<<<<<<< HEAD
-=======
         public IActionResult Details()
         {
             var product = new Produit
@@ -62,6 +47,6 @@ namespace ProjetMVC.Controllers
         }
 
 
->>>>>>> 9ff117c1b0aca41cf9c896ac8c05fe09437b3154
+
     }
 }

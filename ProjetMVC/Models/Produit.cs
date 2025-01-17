@@ -9,11 +9,11 @@ namespace ProjetMVC.Models
         
        
         [StringLength(100, MinimumLength = 3)]
-        [Display(Name = "Designation")]
+        [Display(Name = "Nom")]
         [Required(ErrorMessage = "Merci de saisir le nom")]
         [MinLength(2, ErrorMessage = "Au moins deux caractères")]
         public string Nom { get; set; }
-        [DataType(DataType.Password)]
+ 
         [Display(Name = "Prix")]
         [Required(ErrorMessage = "Merci de saisir le prix")]
         public double Prix { get; set; }

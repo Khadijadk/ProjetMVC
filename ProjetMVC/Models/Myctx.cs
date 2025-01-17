@@ -10,8 +10,8 @@ namespace ProjetMVC.Models
         }
        
         public DbSet<Produit> Produit { get; set; }
+       
         public DbSet<Client> Client { get; set; }
-        public DbSet<Catalogue> Catalogue { get; set; }
 
     }
 }

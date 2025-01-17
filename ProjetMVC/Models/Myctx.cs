@@ -8,11 +8,10 @@ namespace ProjetMVC.Models
         public Myctx(DbContextOptions<Myctx> options) : base(options)
         {
         }
-        public DbSet<Client> Clients { get; set; }
+       
         public DbSet<Produit> Produit { get; set; }
+        public DbSet<Client> Client { get; set; }
         public DbSet<Catalogue> Catalogue { get; set; }
-
-        public DbSet<Commande> Commande { get; set; }
 
     }
 }

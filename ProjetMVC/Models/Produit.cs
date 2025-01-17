@@ -1,3 +1,4 @@
+
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace ProjetMVC.Models
@@ -6,13 +7,17 @@ namespace ProjetMVC.Models
     {
         public int Id { get; set; }
         
-        [Required]
+       
         [StringLength(100, MinimumLength = 3)]
+        [Display(Name = "Designation")]
+        [Required(ErrorMessage = "Merci de saisir le nom")]
+        [MinLength(2, ErrorMessage = "Au moins deux caractères")]
         public string Nom { get; set; }
-
-        [Required]
-        [StringLength(100, MinimumLength = 3)]
-        public decimal Prix { get; set; }
+        [DataType(DataType.Password)]
+        [Display(Name = "Prix")]
+        [Required(ErrorMessage = "Merci de saisir le prix")]
+        public double Prix { get; set; }
 
     }
 }
+

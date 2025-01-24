@@ -1,0 +1,136 @@
+﻿
+
+/* Conteneur global */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+    /* Titre */
+    .container h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+.actions{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+/* Bouton créer */
+.actions .btn-create {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+    .actions .btn-create:hover {
+        background-color: #0056b3;
+    }
+
+/* Conteneur des cartes */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Style de la carte */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px; 
+    height: 250px; 
+    padding: 10px;
+    display: flex;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+/* Conteneur de l'image */
+.image-container {
+    width: 180px;
+    height: 150px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color:azure;
+}
+
+
+.card-details {
+    text-align: left; /* Alignement à gauche */
+    padding-left: 10px; /* Ajout d'un espacement à gauche */
+}
+
+    /* Nom du produit */
+    .card-details h3 {
+        font-size: 16px;
+        color: #333;
+        margin-top: 3px;
+        font-weight: bold;
+    }
+
+    /* Prix */
+    .card-details .price {
+        font-size: 14px;
+        color: #555;
+    }
+
+/* Boutons d'action */
+.card-actions {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    padding: 0 10px; /* Espacement sur les côtés */
+}
+
+    .card-actions a {
+        flex: 1;
+        padding: 8px 5px;
+        text-align: center;
+        font-size: 12px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        color: white;
+    }
+
+.btn-edit {
+    background-color: #007bff;
+}
+
+    .btn-edit:hover {
+        background-color: #0056b3;
+    }
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+    .btn-delete:hover {
+        background-color: #c82333;
+    }
+
+
+
+/*    animation*/

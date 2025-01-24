@@ -1,71 +1,69 @@
-﻿@* @model Client
-
-<form asp-action="index" method="post">
-    <div class="form-group">
-        <label asp-for="Nom" class="control-label"></label>
-        <input asp-for="Nom" class="form-control" />
-
-    </div>
-    <div class="form-group">
-        <label asp-for="Prénom" class="control-label"></label>
-        <input asp-for="Prénom" class="form-control" />
-
-    </div>
-
-    <div class="form-group">
-        <label asp-for="AdresseEmail" class="control-label"></label>
-        <input asp-for="AdresseEmail" class="form-control" />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Password" class="control-label"></label>
-        <input asp-for="Password" class="form-control" />
-    </div>
-
-    <button type="submit" class="btn btn-primary">S'inscrire</button>
-</form> *@ 
-
-
-@model ProjetMVC.Models.Client
+﻿@model ProjetMVC.Models.Client
 
 @{
     ViewData["Title"] = "Inscription";
 }
 
-<h1>Inscription</h1>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProjetMVC</title>
+    <link rel="stylesheet" href="~/css/inscription.css" />
+</head>
+<body>
+
+    <div class="wrap-container">
+    <div class="form-container">
+        <h1>Inscription</h1>
         <form asp-action="Inscription">
+            <!-- Affiche les erreurs de validation -->
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Champ Nom -->
             <div class="form-group">
-                <label asp-for="Nom" class="control-label"></label>
-                <input asp-for="Nom" class="form-control" />
+                <label asp-for="Nom"></label>
+                <input asp-for="Nom" />
                 <span asp-validation-for="Nom" class="text-danger"></span>
             </div>
+
+            <!-- Champ Prénom -->
             <div class="form-group">
-                <label asp-for="Prenom" class="control-label"></label>
-                <input asp-for="Prenom" class="form-control" />
+                <label asp-for="Prenom"></label>
+                <input asp-for="Prenom" />
                 <span asp-validation-for="Prenom" class="text-danger"></span>
             </div>
+
+            <!-- Champ Adresse Email -->
             <div class="form-group">
-                <label asp-for="AdresseEmail" class="control-label"></label>
-                <input asp-for="AdresseEmail" class="form-control" />
+                <label asp-for="AdresseEmail"></label>
+                <input asp-for="AdresseEmail" />
                 <span asp-validation-for="AdresseEmail" class="text-danger"></span>
             </div>
+
+            <!-- Champ Mot de Passe -->
             <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
+                <label asp-for="Password"></label>
+                <input asp-for="Password" type="password" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <input type="submit" value="Inscription" class="btn btn-primary" />
-            </div>
+            <!-- Bouton Inscription -->
+            <button type="submit" class="btn-submit">S'inscrire</button>
         </form>
-    </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+        <!-- Lien Retour -->
+        <a asp-action="Index" class="back-link">Retour à la liste</a>
+    </div>
+    </div>
+    <div class="hero">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+</body>
+</html>

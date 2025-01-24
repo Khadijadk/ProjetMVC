@@ -1,0 +1,78 @@
+﻿/* Style global pour le body */
+.wrap-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Conteneur du formulaire */
+.form-container {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+    /* Titre du formulaire */
+    .form-container h1 {
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Champs de formulaire */
+    .form-container .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-container label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+    .form-container input {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    /* Bouton de soumission */
+    .form-container .btn-submit {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .form-container .btn-submit:hover {
+            background-color: #0056b3;
+        }
+
+    /* Lien retour */
+    .form-container .back-link {
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+        color: #555;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+        .form-container .back-link:hover {
+            text-decoration: underline;
+        }

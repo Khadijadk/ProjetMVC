@@ -4,40 +4,36 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Récaputilatif</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nom)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Prix)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Nom)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Prix)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProjetMVC</title>
+    <link rel="stylesheet" href="~/css/produit.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="actions">
+            <h1>Liste des produits</h1>
+            <a asp-action="Create" class="btn-create">Créer un nouveau produit</a>
+        </div>
+        <div class="cards-container">
+            @foreach (var produit in Model)
+            {
+                <div class="card">
+                    <div class="image-container">
+                        <!-- Image du produit -->
+                    </div>
+                    <h3>@produit.Nom</h3>
+                    <p class="price">@produit.Prix €</p>
+                    <div class="card-actions">
+                        <a asp-action="Edit" asp-route-id="@produit.Id" class="btn-edit">Modifier</a>
+                        <a asp-action="Delete" asp-route-id="@produit.Id" class="btn-delete">Supprimer</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>
